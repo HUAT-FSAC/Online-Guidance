@@ -1,0 +1,84 @@
+title: HUAT FSAC Docs
+description: 新进队员入门指南
+theme: just-the-docs
+
+url: https://www.huat-fsac.eu.org/
+
+exclude:
+  # from https://github.com/jekyll/jekyll/blob/master/lib/site_template/_config.yml:
+    - .sass-cache/
+    - .jekyll-cache/
+    - gemfiles/
+    - Gemfile
+    - Gemfile.lock
+    - node_modules/
+    - vendor/bundle/
+    - vendor/cache/
+    - vendor/gems/
+    - vendor/ruby/
+    # specific to the theme website:
+    - bin/
+    - lib/
+    - "*.gemspec"
+    - "*.gem"
+    - LICENSE.txt
+    - package.json
+    - package-lock.json
+    - Rakefile
+    - README.md
+
+permalink: pretty
+
+# Enable or disable heading anchors
+heading_anchors: true
+
+aux_links:
+  "关于 HUAT FSAC":
+    - "//www.huat-fsac.eu.org/about"
+
+# External navigation links
+nav_external_links:
+  - title: FSAC Docs on GitHub
+    url: https://github.com/NekoRectifier/huat-fsac-tutorial
+
+# Footer content
+# appears at the bottom of every page's main content
+
+# Back to top link
+back_to_top: true
+back_to_top_text: "回到顶部"
+
+footer_content: "版权所有 &copy; 2022-2023 @HUAT_FSAC."
+
+# Footer last edited timestamp
+last_edit_timestamp: true # show or hide edit time - page must have `last_modified_date` defined in the frontmatter
+last_edit_time_format: "%b %e %Y at %I:%M %p" # uses ruby's time format: https://ruby-doc.org/stdlib-2.7.0/libdoc/time/rdoc/Time.html
+
+
+# Footer "Edit this page on GitHub" link text
+gh_edit_link: true # show or hide edit this page link
+gh_edit_link_text: "在 Github 上改进此页面"
+gh_edit_repository: "https://github.com/NekoRectifier/huat-fsac-tutorial" # the github URL for your repo
+gh_edit_branch: "main" # the branch that your docs is served from
+# gh_edit_source: docs # the source that your files originate from
+gh_edit_view_mode: "tree" # "tree" or "edit" if you want the user to jump into the editor immediately
+
+# Color scheme currently only supports "dark", "light"/nil (default), or a custom scheme that you define
+color_scheme: dark
+
+callouts_level: loud # or loud
+callouts:
+  highlight:
+    color: yellow
+  important:
+    title: Important
+    color: blue
+  new:
+    title: New
+    color: green
+  note:
+    title: Note
+    color: purple
+  warning:
+    title: Warning
+    color: red
