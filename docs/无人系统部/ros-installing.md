@@ -23,6 +23,8 @@ parent: 无人系统部
 ## 操作步骤
 
 1. 配置 Ubuntu 软件仓库（Repositories）  
+   
+   你可以参考[这里（USTC）](https://mirrors.ustc.edu.cn/help/ros.html)的步骤进行。  
    首先修改 `apt` 包管理器的 `source.list` 添加来自清华镜像的 ROS 源。
 
    打开终端输入：
@@ -135,4 +137,5 @@ parent: 无人系统部
 【1】<http://wiki.ros.org/cn/melodic/Installation/Ubuntu>  
 【2】<http://wiki.ros.org/cn/ROS/Tutorials>    
 【3】<https://blog.csdn.net/qq_44830040/article/details/106049992>  
-【4】<https://www.guyuehome.com/10082>
+【4】<https://www.guyuehome.com/10082>  
+【5】<https://mirrors.ustc.edu.cn/help/ros.html>
