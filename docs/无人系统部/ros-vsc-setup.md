@@ -55,6 +55,8 @@ GCC 和 VSCode 中标配的 “C/C++” 插件在开发 ROS（C++）上实在显
 
     在项目根目录下添加 `.clang-format` 文件，并修改其内容。
 
+    ![.clang-format](/assets/images/ros-vsc-setup/.clang-format.png)
+
     ```yaml
     Language:        Cpp
 
@@ -189,16 +191,24 @@ GCC 和 VSCode 中标配的 “C/C++” 插件在开发 ROS（C++）上实在显
 
 - CMake Tools (Microsoft)
 
+- CodeLLDB (Vadim Chugunov)
+
+![ext](/assets/images/ros-vsc-setup/exts.png)
+
 ### clangd 设置
 
 在 VSCode 插件中找到 clangd 插件的设置，在“Clangd: Arguments” 中添加：`--compile-commands-dir=${workspaceFolder}/build`
 然后保存。  
 此配置将会指明编译后文件的存放路径。
 
+![clangd-setting](/assets/images/ros-vsc-setup/clangd-setting.png)
+
 ### CMake Toools 设置 —— 生成 compile_command.json
 
 **这一步是 clangd 能够自动索引到头文件的关键。**  
 同样找到该插件的设置，并将 “Export Compile Commands File” 的选项打上钩。接着使用 `catkin_make` 或者 `catkin build` 编译一下。
+
+![cmaketool](/assets/images/ros-vsc-setup/cmaketool.png)
 
 最后在 `/build` 文件夹下看看有没有 `compile_commands.json` 文件的存在。
 
