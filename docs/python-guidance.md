@@ -1,7 +1,6 @@
 ---
 layout: default
 title: Python 3 入门汇总
-parent: 无人系统部
 ---
 
 # Python 3 入门汇总

@@ -1,7 +1,6 @@
 ---
 layout: default
 title: ROS1 (Melodic) 安装教程
-parent: 无人系统部
 ---
 
 # ROS1 (Melodic) 安装教程

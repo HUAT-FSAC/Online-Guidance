@@ -1,7 +1,6 @@
 ---
 layout: default
 title: 在 Linux 上设置代理
-parent: 无人系统部
 ---
 
 # 在 Linux 上设置代理

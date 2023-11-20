@@ -1,7 +1,6 @@
 ---
 layout: default
 title: VSCode ROS 开发指南 (Clang)
-parent: 无人系统部
 ---
 
 # VSCode ROS 开发指南 (Clang)

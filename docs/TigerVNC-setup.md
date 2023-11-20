@@ -1,7 +1,6 @@
 ---
 layout: default
 title: TigerVNC 配置指南
-parent: 无人系统部
 ---
 
 # TigerVNC 配置指南
