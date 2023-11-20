@@ -3,7 +3,6 @@ layout: default
 title: 仿真测试组
 nav_order: 7
 has_children: true
-parent: 无人系统部
 ---
 
 # 仿真测试组

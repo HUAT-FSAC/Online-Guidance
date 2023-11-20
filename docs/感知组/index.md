@@ -3,7 +3,6 @@ layout: default
 title: 感知组
 nav_order: 4
 has_children: true
-parent: 无人系统部
 ---
 
 # 感知组

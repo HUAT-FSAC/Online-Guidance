@@ -3,7 +3,6 @@ layout: default
 title: 规控组
 nav_order: 5
 has_children: true
-parent: 无人系统部
 ---
 
 # 规控组

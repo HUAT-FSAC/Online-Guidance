@@ -2,7 +2,6 @@
 layout: default
 title: 数据集生成
 parent: 感知组
-grand_parent: 无人系统部
 nav_order: 2
 ---
 

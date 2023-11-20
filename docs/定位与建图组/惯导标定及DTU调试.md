@@ -3,7 +3,6 @@ layout: default
 title: 惯导标定及 DTU 调试
 has_children: false
 parent: 定位与建图组
-grand_parent: 无人系统部
 ---
 
 # 惯导标定及 DTU 调试

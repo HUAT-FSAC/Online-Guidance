@@ -2,7 +2,6 @@
 layout: default
 title: 神经网络环境搭建及 MNIST 数据集训练与验证
 parent: 感知组
-grand_parent: 无人系统部
 ---
 
 # 神经网络环境搭建及 MNIST 数据集训练与验证
