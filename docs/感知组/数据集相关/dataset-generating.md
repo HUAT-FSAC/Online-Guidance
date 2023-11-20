@@ -1,8 +1,8 @@
 ---
 layout: default
 title: 数据集生成
-parent: 感知组
-nav_order: 2
+parent: 数据集相关
+grand_parent: 感知组
 ---
 
 # 数据集生成

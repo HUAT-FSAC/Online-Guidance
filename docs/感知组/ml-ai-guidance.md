@@ -2,7 +2,6 @@
 layout: default
 title: 机器学习入门资料汇总
 parent: 感知组
-nav_order: 3
 ---
 
 # 机器学习入门资料汇总
