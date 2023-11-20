@@ -1,5 +1,6 @@
 ---
 layout: default
+parent: 综合
 title: TigerVNC 配置指南
 ---
 

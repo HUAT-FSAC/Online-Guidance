@@ -1,5 +1,6 @@
 ---
 layout: default
+parent: 综合
 title: Python 3 入门汇总
 ---
 

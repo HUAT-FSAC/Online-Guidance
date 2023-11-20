@@ -1,5 +1,6 @@
 ---
 layout: default
+parent: 综合
 title: ROS1 (Melodic) 安装教程
 ---
 

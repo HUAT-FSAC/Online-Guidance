@@ -1,5 +1,6 @@
 ---
 layout: default
+parent: 综合
 title: VSCode ROS 开发指南 (Clang)
 ---
 

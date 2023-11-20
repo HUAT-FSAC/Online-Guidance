@@ -1,5 +1,6 @@
 ---
 layout: default
+parent: 综合
 title: 在 Linux 上设置代理
 ---
 
