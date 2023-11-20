@@ -19,12 +19,12 @@ parent: 无人系统部
 
 一部分网上资源较多，推荐参考<https://cloud.tencent.com/developer/article/2062275>的指南。
 
-请注意：
 
-- Ubuntu 系统要求/建议安装为 Ubuntu LTS 18.04，避免影响后续操作；
-- VMWare Workstation 的版本并不严格要求，16/17/18都是可以的；
-- 我们提供 Ubuntu 镜像的网盘下载（快于官方网站）[链接🔗](https://www.123pan.com/s/Cff7Vv-mQ6nH.html) 
-- 你可以在[这里](https://www.vmware.com/go/getworkstation-win)下载 VMWare 虚拟机最新版本
+{: .highlight }
+> - Ubuntu 系统要求/建议安装为 Ubuntu LTS 18.04，避免影响后续操作；
+> - VMWare Workstation 的版本并不严格要求，16/17/18都是可以的；
+> - 我们提供 Ubuntu 镜像的网盘下载（快于官方网站）[链接🔗](https://www.123pan.com/s/Cff7Vv-mQ6nH.html) 
+> - 你可以在[这里](https://www.vmware.com/go/getworkstation-win)下载 VMWare 虚拟机最新版本
 
 #### 🌟 WSL2（推荐）
 
@@ -62,6 +62,7 @@ parent: 无人系统部
 
 由于能力限制，我们无法在这里直接讲述开发中最常见的 Linux 命令及如何学习/使用他们。但是可以把[这份教程](https://www.freecodecamp.org/chinese/news/command-line-for-beginners/)推荐给你。
 
+{: .note }
 另外我们也支持你自己在搜索引擎上搜索不同的命令或者在虚拟机上亲手看看他们如何工作，毕竟**耐心与兴趣**是最能保持你对代码开发的热情的。
 
 ## 2. 编程语言基础概念

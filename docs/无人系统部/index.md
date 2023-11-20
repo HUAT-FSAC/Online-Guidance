@@ -14,3 +14,5 @@ has_children: true
 以下部分是基础知识及入门教程汇总，按需参考：
 
 - [Linux 日常操作与基础知识](https://arch.icekylin.online/guide/advanced/system-ctl.html#%E5%BF%85%E9%A1%BB%E6%8E%8C%E6%8F%A1%E7%9A%84-linux-%E7%9F%A5%E8%AF%86)
+
+{: .no_toc}
