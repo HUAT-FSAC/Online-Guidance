@@ -1,7 +1,7 @@
 ---
 layout: default
 title: 规控组
-nav_order: 5
+nav_order: 3
 has_children: true
 ---
 

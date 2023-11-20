@@ -1,7 +1,6 @@
 ---
-layout: default
+layout: minimal
 title: HUAT 无人车队开源项目
-nav_order: 4
 ---
 
 # HUAT 无人车队开源项目
