@@ -1,7 +1,7 @@
 ---
 layout: default
 title: 2024 预备队员无人系统部队员学习计划
-nav_order: 6
+nav_order: 7
 ---
 
 # 2024 预备队员无人系统部队员学习计划
@@ -15,9 +15,11 @@ nav_order: 6
 
 ### 1.1 Linux（Ubuntu）系统的安装
 
+![ubuntu-logo](/assets/images/2024-learning-roadmap/ubuntu-logo.webp)
+
 #### VMWare
 
-一部分网上资源较多，推荐参考<https://cloud.tencent.com/developer/article/2062275>的指南。
+关于这一部分网上资源较多，推荐参考<https://cloud.tencent.com/developer/article/2062275>的指南。
 
 
 {: .highlight }
@@ -28,7 +30,9 @@ nav_order: 6
 
 #### 🌟 WSL2（推荐）
 
-如果你的电脑系统为 Windows 11 或 Windows 10 较新版本，可以考虑使用 Windows Subsystem for Linux 来创建虚拟机。
+![wsl](/assets/images/2024-learning-roadmap/wsl.png)
+
+如果你的电脑系统为 Windows 11 或 Windows 10 较新版本且性能配置较高，可以考虑使用 Windows Subsystem for Linux 来创建虚拟机。
 
 相比 VMWare 它具有以下优势：
 - 无需 2.xG 的镜像文件
@@ -44,6 +48,33 @@ nav_order: 6
 [3] <https://zhuanlan.zhihu.com/p/348813745>  
 [4] <https://blog.csdn.net/qq401195092/article/details/133717025>  
 [5] <https://blog.csdn.net/microsoft_mos/article/details/123627295>  
+
+### 1.1.1 Ubuntu 安装后配置
+
+#### 换源
+
+在 Ubuntu 中软件是以“软件包”的形式存在的，而我们想要下载或更新软件就首先要更新软件包列表的索引。考虑到与国外原分发服务器的连接延迟，更换成在国内架设的“镜像源”显然更为合适。
+
+Ubuntu 的包管理器是 “apt”，它的“软件源”配置文件在 `/etc/apt/source.list` 。你可以通过执行 `sudo gedit /etc/apt/source.list` 来编辑它。
+
+将打开的文件完全替换为以下的内容：
+```plain
+# 默认注释了源码仓库，如有需要可自行取消注释
+deb https://mirrors.ustc.edu.cn/ubuntu/ bionic main restricted universe multiverse
+# deb-src https://mirrors.ustc.edu.cn/ubuntu/ bionic main restricted universe multiverse
+
+deb https://mirrors.ustc.edu.cn/ubuntu/ bionic-security main restricted universe multiverse
+# deb-src https://mirrors.ustc.edu.cn/ubuntu/ bionic-security main restricted universe multiverse
+
+deb https://mirrors.ustc.edu.cn/ubuntu/ bionic-updates main restricted universe multiverse
+# deb-src https://mirrors.ustc.edu.cn/ubuntu/ bionic-updates main restricted universe multiverse
+
+deb https://mirrors.ustc.edu.cn/ubuntu/ bionic-backports main restricted universe multiverse
+# deb-src https://mirrors.ustc.edu.cn/ubuntu/ bionic-backports main restricted universe multiverse
+
+```
+
+详细步骤[见此](https://mirrors.ustc.edu.cn/help/ubuntu.html)
 
 ### 1.2 Linux 命令行操作
 
@@ -65,9 +96,39 @@ nav_order: 6
 {: .note }
 另外我们也支持你自己在搜索引擎上搜索不同的命令或者在虚拟机上亲手看看他们如何工作，毕竟**耐心与兴趣**是最能保持你对代码开发的热情的。
 
+### 1.3 浏览器的安装
+
+如果你使用 VMWare 虚拟机来安装 Ubuntu 系统的话，在安装过程中你会注意到这一选项：
+
+![](/assets/images/2024-learning-roadmap/install-choice.png)
+
+选择“最小安装”即可，默认的 Firefox 浏览器会正常进行安装。
+
+但如果使用 WSL 则安装浏览器的意义并不大，因为Windows环境下的浏览器是能直接使用的。  
+你可以跳过这一部分，或者在终端中输入 `sudo apt install firefox` 来进行安装。
+
+### 1.4 IDE 安装及其配置
+
+在车队目前主要使用 C/C++ 进行开发，部分情况下使用 Python 3。因此我们推荐使用 Visual Studio Code（下称 VSC） 来进行代码教学及日常开发。
+
+#### 安装
+
+安装的过程不多复述，你可以通过 Ubuntu 内置的应用中心或者命令来安装。  
+详细教程见[此](https://zhuanlan.zhihu.com/p/430939275)。
+
+
+### 1.5 Linux 下代理的配置
+
+此部分请移步至[这里](https://huat-fsac.eu.org/docs/%E7%BB%BC%E5%90%88/setting-up-proxy-on-linux/)查看。
+
 ## 2. 编程语言基础概念
 
 接下来学习并熟悉C/C++基础语言框架,掌握基础代码查错技巧,深入学习cmake并理解其运行机制。C++是ROS主要使用的编程语言,对其有基本的了解非常重要。
+
+### 2.1 基础语言框架
+
+经过了大一的计算机/C语言课程，想必你已经对编程语言的基本框架和概念有了初步的了解。
+
 
 ## 3. git使用
 
